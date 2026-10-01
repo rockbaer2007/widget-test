@@ -1,0 +1,28 @@
+{
+  "format": "ha-grafik-widget-package",
+  "apiVersion": "0.1",
+  "id": "ugso.widget-test",
+  "name": "UGSo Widget Test",
+  "version": "0.1.0",
+  "license": "MIT",
+  "icon": "icons/widget-test.svg",
+  "widgets": [
+    {
+      "type": "ugso.widget-test/status-label",
+      "label": "Status Label",
+      "icon": "icons/widget-test.svg",
+      "defaults": {
+        "text": "Widget-Paket funktioniert"
+      },
+      "propertyGroups": [
+        {
+          "label": "Inhalt",
+          "fields": [
+            { "key": "text", "label": "Text", "type": "text" }
+          ]
+        }
+      ],
+      "render": { "kind": "text", "valueKey": "text" }
+    }
+  ]
+}
